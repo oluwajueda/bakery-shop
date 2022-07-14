@@ -523,7 +523,7 @@ body{
                       text-align: center;
                       margin-left: auto;
                       margin-right: auto;
-                      margin-top: -82px;
+                      margin-top: -72px;
 
                     }
                     .details-btn{
@@ -538,7 +538,7 @@ body{
                       
                     }
                       .details-btn-div{
-                        padding-top: 35px;
+                        padding-top: 12px;
                       }
                     .details-first-div{
                       width: 100vw;
@@ -613,6 +613,20 @@ body{
             color: #5c5c5c;
             width: 270px;
            margin: auto;
+           margin-top: 10px;
          
           }
+          .arrow-btn{
+            border-color: transparent;
+            background-color: #ffc076;
+            width: 26px;
+            font-size: 28px;
+            margin-left: auto;
+            display: block;
+            margin-right: 25px;
+          }
+          .arrow-btn-div{
+            padding-top: 12px;
+          }
+
 }

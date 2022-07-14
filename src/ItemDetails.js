@@ -1,13 +1,17 @@
 import React from 'react'
 import { useGlobalContext } from './context'
 import star from './photos/star.png'
+import {AiOutlineArrowLeft} from 'react-icons/ai'
 
 const ItemDetails = () => {
 
-    const {itemDetails, number,decrease,increase} = useGlobalContext()
+    const {itemDetails, number,decrease,increase, backDetails} = useGlobalContext()
     const {id,image,text,name} = itemDetails
   return<div>
   <div className='details-first-div'>
+    <div className='arrow-btn-div'>
+   <button onClick={backDetails} className='arrow-btn'><AiOutlineArrowLeft/></button>
+   </div>
     <div className='details-btn-div'>
     <button className='details-btn'>Details</button>
     </div>

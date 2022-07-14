@@ -38,7 +38,13 @@ const AppProvider = ({children}) => {
             return number
         }
      }
-
+const backDetails = () =>{
+     setShowDetails(false)
+      setHome(true)
+        setIsProfile(false)
+        setIsInbox(false)
+        setIsOrder(false)
+}
     
     const showProfile = () =>{
         setIsProfile(true)
@@ -67,7 +73,7 @@ const AppProvider = ({children}) => {
            
     }
     const completeDetails = (id,image,text,name) =>{
-         console.log('hello')
+       
          setHome(false)
          setShowDetails(true)
          const newObj = {id,image,text,name} 
@@ -98,7 +104,8 @@ const AppProvider = ({children}) => {
          itemDetails,
          increase,
          decrease,
-         number
+         number,
+         backDetails
          }}>
             {children}
         </AppContext.Provider>
