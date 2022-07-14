@@ -1,0 +1,507 @@
+body{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  margin-bottom: 0;
+}
+
+@media(max-width: 770px){
+  .landing-background {
+      background-color: #1e1e1e;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+        background-size: cover;
+    }
+  .landing-background h2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 226px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+   font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.23;
+    color: #cf8900;
+  }
+
+     .landing-background p{
+      
+      width: 273px;
+      height: 77px;
+     text-align: center;
+     
+     padding-top: 300px;
+      color: #fff;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 31px;
+      text-align: center;
+      width: 273px;
+     }
+     .login-btn{
+        width: 245px;
+        height: 46px;
+        display: inline;
+        background-color: #9B3434;
+        border-radius: 30px;
+        text-align: center;
+        /* margin-left: 70px; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        font-style: normal;
+        color: #fff;
+        border: transparent;
+     }
+     .signup-btn{
+        width: 245px;
+        height: 46px;
+        display: inline;
+        background-color: #E2d6d6;
+        border-radius: 30px;
+        text-align: center;
+        /* margin-left: 70px; */
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        font-style: normal;
+        color: #fff;
+        margin-top: 12px;
+        display: block;
+        border: transparent;
+        
+     }
+     .login-btn-div{
+      text-align: center;
+      margin-top: 12px;
+     }
+     .loginpage h1{
+      color: #cf8900;
+      margin-top: 27px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .loginpage h3{
+      color: #000;
+      font-size: 20px;
+      margin-left: 53px;
+      margin-top: 25px;
+     }
+     /* form{
+      text-align: center;
+     } */
+
+     .first-p{
+      color: #505050;
+      font-size: 10px;
+      margin-left: 52px;
+     }
+
+     .form-area{
+      margin-top: 25px;
+      margin-bottom: 1rem;
+      margin-left: 50px;
+    
+     }
+     
+     .label-input{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 1rem;
+     }
+     .form-label{
+      font-size: 10px;
+      line-height: 15px;
+      font-weight: 500;
+      font-style: normal;
+    
+     
+     }
+     .form-input{
+      width: 274px;
+      height: 38px;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 10px;
+      
+     }
+         .checkbox-remember{
+          display: flex;
+         }
+         .checkbox{
+          margin-right: 3px;
+          height: 20px;
+          background-color: #fff;
+          border: 1px solid #000;
+          border-radius: 5px;
+         }
+                 .checkbox-remember p{
+                  margin-left: 5px;
+                 
+                  font-weight: 400px;
+                  font-size: 13px;
+                  line-height: 20px;
+                }
+
+                .loginpage-btn{
+                  height: 38px;
+                  width: 274px;
+                  border-radius: 10px;
+                  background-color: #bfbfbf;
+                  border-color: transparent;
+                  font-size: 16px;
+                  font-weight: 500;
+                  font-style: normal;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #fff;
+                  margin-top: 27px;
+                }
+                .forgot-password{
+               text-align: center;
+               height: 17px;
+               font-weight: 400;
+               font-size: 13px;
+               line-height: 20px;
+               color: #494949;
+               font-style: normal;
+                }
+                .login-with{
+                  text-align: center;
+                  height: 17px;
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 20px;
+                  color: #494949;
+                  margin-top: 34px;
+                }
+                .btn-div{
+                  margin-top: 23px;
+                  text-align: center;
+                  margin-right: auto;
+                  margin-left: auto;
+                }
+                ::placeholder{
+                  height: 15px;
+                  width: 133px;
+                  font-style: normal;
+                  font-size: 10px;
+                  line-height: 15px;
+                  color: #b7b7b7;
+                  padding-left: 17px;
+                }
+                .social-btn{
+                  background: linear-gradient(90.08deg,
+                    rgba(121, 0, 179, 0.52) -13.95%,
+                    rgba(59, 16, 183, 0.79) 108.7%);
+                    border-radius: 10px;
+                    height: 38px;
+                    width: 274px;
+                    margin-bottom: 12px;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #fff;
+                    font-style: normal;
+                    font-weight: 400;
+                    border: transparent;
+                }
+           .last-p{
+            padding-top: 19px;
+            padding-bottom: 30px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 20px;
+            color: #494949;
+           }   
+           
+           .at-least{
+            font-size: 6px;
+            line-height: 9px;
+            font-weight: 400;
+            font-style: normal;
+            color: #09da3b;
+            padding: 7px;
+           }
+           .privacy-policy{
+            padding-right: 40px;
+            padding-top: 12px;
+            margin-top: 8px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 16px;
+           }
+           .registration-btn{
+            height: 38px;
+              width: 274px;
+              border-radius: 10px;
+              background-color: #9b3434;
+              border-color: transparent;
+              font-size: 16px;
+              font-weight: 500;
+              font-style: normal;
+              line-height: 24px;
+              text-align: center;
+              color: #fff;
+              margin-top: 40px;
+              margin-bottom: 20px;
+           }
+           .registration-last-p{
+              margin-bottom: 20px;
+              padding-bottom: 15px;
+             text-align: center;
+           }
+           .Market-div{
+            width: 100vw;
+            height: 171px;
+            background-color: #ffc076;
+           }
+           .cart-image{
+            font-size: 12px;
+            width: 30px;
+            height: 30px;
+            margin-top: 18px;
+            margin-left: 84%;
+            
+           }
+          .Market-div h1{
+            font-size: 27px;
+            line-height: 25.84px;
+            padding: 5px;
+            color: #9B3434;
+            margin-left: 15px;
+          }
+          .bread-image{
+            display: block;
+            width: 200px;
+            height: 133.88px;
+           margin-left: auto;
+            margin-top: -36px;
+          }
+          .search-input{
+            width: 221px;
+            height: 37px;
+           
+            offset: 1px,
+              1px rgba(155, 52, 52, 0.25);
+             
+            border-radius: 5px;
+          }
+          .search-div{
+            padding-left: 12px;
+           
+          }
+         .search-btn{
+          width: 47px;
+          height: px;
+          Offset: 1px, 2px rgba(155, 52, 52, 0.25);
+          background-color: #9b3434;
+          margin-left: 14px;
+          border: transparent;
+          
+          
+         }
+         .input-to-btn{
+         display: flex;
+        margin-top: -15px;
+         }
+         .photo{
+          width: 130px;
+          height: 80px;
+         
+         }
+      .products{
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+      }   
+     .food-name{
+      font-size: 8px;
+      line-height: 12px;
+      line-height: 100%;
+      color: #9b3434;
+      padding-top: 6px;
+     }  
+     .food-price{
+      font-style: medium;
+      font-size: 8px;
+      line-height: 12px;
+      line-height: 100%;
+      color: #959595;
+      margin-top: 7px;
+     }  
+
+     .food-background{
+      background-color: rgba(155, 52, 52, 0.05);
+      width: 130px;
+      height: 50px;
+      margin-bottom: 5px;
+     }
+     .category-btn{
+      width: 80px;
+      height: 30px;
+      margin-top: 32px;
+      margin-right: 5px;
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 15px;
+      font-style: light;
+      color: #9B3434;
+      border-color: #9b3434;
+      background-color: #fff;
+     border-radius: 7px;
+
+     
+     }
+     .category-btn:hover{
+      background-color: #fffb90;
+     }
+         .category-div{
+          text-align: center;
+         }
+
+         .bottom-bar{
+          width: 100%;
+          height:50px;
+          background-color: #9b3434;
+          display: flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-items: center;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+
+         }
+         .bottom-btn{
+         
+          border: transparent;
+          color: #fff;
+          background-color: #9b3434;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 27px;
+          width: 30px;
+         }
+         .edit{
+          width: 30px;
+          height: 30px;
+          margin-left: auto;
+          padding-top: 11px;
+          padding-right: 13px;
+         }
+         .location{
+          width: 128px;
+          height: 17px;
+          color: #9b3434;
+          font-size: 12px;
+          line-height: 18px;
+          margin-left: 35px;
+          margin-bottom: 10px;
+         }
+         .my-name{
+          font-style: bold;
+          font-size: 27px;
+          line-height: 100%;
+          color: #9b3434;
+          font-weight: 700;
+         
+         }
+         .date{
+          font-style: bold;
+          font-size: 13px;
+          line-height: 20px;
+          line-height: 100%;
+          align-items: left;
+         }
+         .name-date{
+          margin-left: 19px;
+         }
+         .profile-image{
+          display: block;
+          width: 100px;
+          height: 100px;
+          margin-left: auto;
+          margin-right: 24px;
+          margin-top: -50px;
+          border-radius: 100%;
+         }
+         .profile-h4{
+          font-size: 13px;
+          margin-left: 38px;
+          margin-top: 20px;
+          margin-bottom: 33px;
+          color: #9b3434;
+         }
+         .form-select{
+          width: 305px;
+          height: 45px;
+          border-color: #9b3434;
+          padding: 8px 20px;
+          color: #9b3434;
+          font-size: 13px;
+         
+         }
+         .input{
+         margin-bottom: 1rem;
+         display: flex;
+         margin-left: auto;
+         justify-content: center;
+         margin-right: auto;
+         }
+         .copyright{
+          display: block;
+          margin-top: 30px;
+         text-align: center;
+          padding-bottom: 16px;
+         }
+         span{
+          font-size: 12px;
+          color: red;
+          padding: 3px;
+          display: none;
+         }
+
+         input:invalid[focused='true'] ~ span{
+          display: block;
+         }
+                    .order-h4 {
+                      font-size: 13px;
+                      margin-left: 38px;
+                      margin-top: 20px;
+                      margin-bottom: 33px;
+                      color: #9b3434;
+                    }
+                    .inbox-h4 {
+                      font-size: 13px;
+                      margin-left: 38px;
+                      margin-top: 20px;
+                      margin-bottom: 33px;
+                      color: #9b3434;
+                    }
+}
