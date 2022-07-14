@@ -17,11 +17,26 @@ const AppProvider = ({children}) => {
      const [email, setEmail] = useState('')
      const [phoneNumber, setPhoneNumber] = useState('')
      const [password, setPassword] = useState('')
+     const [showDetails, setShowDetails] = useState(false)
+     const [itemDetails, setItemDetails] = useState({})
+     const [number, setNumber] = useState(1)
     
 
      const filterItems = (category) => {
         const newItems = items.filter((item)=> item.category === category)
         setMenuItems(newItems)
+     }
+
+     const increase = () =>{
+        setNumber(number+1)
+     }
+      const decrease =()=> {
+        
+        if(number>1){
+           setNumber(number-1)
+        }else{
+            return number
+        }
      }
 
     
@@ -51,6 +66,13 @@ const AppProvider = ({children}) => {
             setHome(false)
            
     }
+    const completeDetails = (id,image,text,name) =>{
+         console.log('hello')
+         setHome(false)
+         setShowDetails(true)
+         const newObj = {id,image,text,name} 
+         setItemDetails( newObj)
+    }
 
     return (
         <AppContext.Provider value={{menuItems,
@@ -71,6 +93,12 @@ const AppProvider = ({children}) => {
          showOrder,
          user,
          setUser,
+         completeDetails,
+         showDetails,
+         itemDetails,
+         increase,
+         decrease,
+         number
          }}>
             {children}
         </AppContext.Provider>

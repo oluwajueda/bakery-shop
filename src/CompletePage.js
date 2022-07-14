@@ -1,6 +1,7 @@
 import React from 'react'
 import { useGlobalContext } from './context'
 import Inbox from './Inbox'
+import ItemDetails from './ItemDetails'
 import MarketHome from './MarketHome'
 import Order from './Order'
 import Profile from './Profile'
@@ -8,7 +9,7 @@ import Profile from './Profile'
 
 const CompletePage = () => {
 
-    const {home,isInbox,isProfile,isOrder} = useGlobalContext()
+    const {home,isInbox,isProfile,isOrder,showDetails} = useGlobalContext()
  
     if(home){
         return<MarketHome/>
@@ -21,6 +22,9 @@ const CompletePage = () => {
     }
     if(isOrder){
         return <Order/>
+    }
+    if(showDetails){
+        return <ItemDetails/>
     }
   
 }

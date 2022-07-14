@@ -360,6 +360,11 @@ body{
       width: 130px;
       height: 50px;
       margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: -4px;
+      padding-top: 5px;
+     
      }
      .category-btn{
       width: 80px;
@@ -374,6 +379,7 @@ body{
       border-color: #9b3434;
       background-color: #fff;
      border-radius: 7px;
+     
 
      
      }
@@ -504,4 +510,109 @@ body{
                       margin-bottom: 33px;
                       color: #9b3434;
                     }
+                    .addto-btn{
+                      width: 20px;
+                      height: 20px;
+                      padding-right: 9px;
+                    }
+                    .image-details{
+                      display: block;
+                      width: 249px;
+                      height: 165.01px;
+                      border-radius: 10px;
+                      text-align: center;
+                      margin-left: auto;
+                      margin-right: auto;
+                      margin-top: -82px;
+
+                    }
+                    .details-btn{
+                      width: 185px;
+                      height: 38px;
+                      border-color: transparent;
+                      background-color: #fff;
+                      border-radius: 14px;
+                      margin-left: auto;
+                      margin-right: auto;
+                      display: block;
+                      
+                    }
+                      .details-btn-div{
+                        padding-top: 35px;
+                      }
+                    .details-first-div{
+                      width: 100vw;
+                        height: 209px;
+                        background-color: #ffc076;
+                    }
+                    .details-h2{
+                      text-align: center;
+                      font-size: 32px;
+                      line-height: 30.62px;
+                      margin-top: 19px;
+                    }
+                    .star{
+                      width: 20px;
+                      height: 20px;
+          }
+          .star-p{
+            display: flex;
+            padding: 12px;
+            margin-left: 22px;
+          }
+          .point{
+            margin-top: 3px;
+          }
+          .number{
+            display: flex;
+            margin-left: 32px;
+            margin-top: 13px;
+            margin-bottom: 19px;
+            border-radius: 100px;
+            width: 100px;
+            height: 45px;
+            border: 1px solid #bfbfbf;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+             
+          }
+          .num-btn{
+            border: transparent;
+            background-color: #fff;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 24px;
+          }
+          .number-p{
+            font-size: 24px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 3px;
+            margin-right: 3px;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          .addtocart-btn{
+            display: block;
+            width: 309px;
+            height: 54px;
+            border-radius: 127px;
+            background-color: #9b3434;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .detail-text{
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #5c5c5c;
+            width: 270px;
+           margin: auto;
+         
+          }
 }
