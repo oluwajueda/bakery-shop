@@ -7,7 +7,7 @@ const ItemDetails = () => {
 
     const {itemDetails, number,decrease,increase, backDetails} = useGlobalContext()
     const {id,image,text,name,price} = itemDetails
-  return<div>
+  return<div className='whole-div'>
   <div className='details-first-div'>
     <div className='arrow-btn-div'>
    <button onClick={backDetails} className='arrow-btn'><AiOutlineArrowLeft/></button>
@@ -20,7 +20,7 @@ const ItemDetails = () => {
   <main className='details-second-div' >
  
    
-   
+   <div>
         <img className='image-details' src={image} alt={name}/>
         <h2 className='details-h2'>{name}</h2>
         <div className='star-p'>
@@ -37,6 +37,7 @@ const ItemDetails = () => {
         </div>
         <button className='addtocart-btn'>Add To Cart</button>
         <p className='detail-text'>{text}</p>
+        </div>
         
       
       </main>
