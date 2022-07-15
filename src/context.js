@@ -72,11 +72,11 @@ const backDetails = () =>{
             setHome(false)
            
     }
-    const completeDetails = (id,image,text,name) =>{
+    const completeDetails = (id,image,text,name,price) =>{
        
          setHome(false)
          setShowDetails(true)
-         const newObj = {id,image,text,name} 
+         const newObj = {id,image,text,name,price} 
          setItemDetails( newObj)
     }
 

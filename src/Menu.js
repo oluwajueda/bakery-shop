@@ -9,7 +9,7 @@ const Menu = () => {
       {
         menuItems.map((menuItem)=>{
           const {id, name, image, price, text} = menuItem;
-          return <article onClick={(e)=>completeDetails(id,image,text,name)} className='section-center' key={id}>
+          return <article onClick={(e)=>completeDetails(id,image,text,name,price)} className='section-center' key={id}>
            <div className='single-product'>
             <img src={image} alt={name} className='photo'/>
             <div className='food-background'>

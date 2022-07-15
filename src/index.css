@@ -628,5 +628,19 @@ body{
           .arrow-btn-div{
             padding-top: 12px;
           }
+          .quantity-price{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            justify-self: center;
 
+          }
+          .h4-price{
+            margin-top: 23px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 22.5px;
+            padding-right: 23px;
+          }
+        
 }
