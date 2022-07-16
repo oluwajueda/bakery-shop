@@ -3,6 +3,7 @@ import cart from './photos/cart.png'
 import bread from './photos/bread-header.png'
 import { useGlobalContext } from './context'
 import Bottombar from './Bottombar'
+import search from './photos/search.png'
 
 const Inbox = () => {
     
@@ -23,7 +24,7 @@ const Inbox = () => {
       <div className='search-div'>
       <input className='search-input' placeholder='search birthday cake'/>
       </div>
-       <button className='search-btn'></button>
+       <button className='search-btn'><img src={search} alt='search'/></button>
        </div>
        <h4 className='inbox-h4'>My Inbox</h4>
       

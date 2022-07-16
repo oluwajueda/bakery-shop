@@ -4,6 +4,7 @@ import bread from './photos/bread-header.png'
 import Menu from './Menu';
 import Categories from './Categories';
 import { useGlobalContext } from './context';
+import search from './photos/search.png'
 
 
 const MarketHome = () => {
@@ -24,7 +25,7 @@ const MarketHome = () => {
       <div className='search-div'>
       <input className='search-input' placeholder='search birthday cake'/>
       </div>
-       <button className='search-btn'></button>
+       <button className='search-btn'><img src={search} alt='search'/></button>
        </div>
        </div>
       

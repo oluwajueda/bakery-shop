@@ -3,6 +3,7 @@ import cart from './photos/cart.png'
 import bread from './photos/bread-header.png'
 import { useGlobalContext } from './context'
 import Bottombar from './Bottombar'
+import search from './photos/search.png'
 
 const Order = () => {
     const{isOrder} = useGlobalContext()
@@ -22,7 +23,7 @@ const Order = () => {
       <div className='search-div'>
       <input className='search-input' placeholder='search birthday cake'/>
       </div>
-       <button className='search-btn'></button>
+       <button className='search-btn'><img src={search} alt='search'/></button>
        </div>
        <h4 className='order-h4'>My Order</h4>
       
