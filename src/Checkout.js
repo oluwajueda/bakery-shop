@@ -1,14 +1,17 @@
 import React from 'react'
 import { useGlobalContext } from './context'
-
+import back from './photos/back.png'
 const Checkout = () => {
 
-     const {loginToPage} = useGlobalContext()
+     const {payButton} = useGlobalContext()
 
   return (
 
    
     <div>
+        <div className='arrow-btn-div'>
+   <img src={back} className='back-image' alt=''/>
+   </div>
       
        <button className='btn-checkout'>Details</button>
 
@@ -48,7 +51,7 @@ const Checkout = () => {
             <hr className='horizonatal-line'/>
    
     
-            <button className='checkout-btn'>Checkout</button>
+            <button onClick={payButton} className='checkout-btn'>Checkout</button>
            
         </form>
          </div>

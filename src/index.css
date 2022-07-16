@@ -786,7 +786,7 @@ body{
                       margin-right: auto;
                       padding-top: 8px;
                       padding-bottom: 8px;
-                      margin-top: 47px;
+                      margin-top: 57px;
                       color: #9b3434;
                       display: block;
                       box-shadow: 1px 1px 3px #9B3434  ;
@@ -810,6 +810,13 @@ body{
                       margin-bottom: calc(16px + 40px);
                       background-color: #fff;
                    color: #fff;
+                    }
+
+                    .back-image{
+                      display: block;
+                      margin-left: auto;
+                      margin-top: 15px;
+                      margin-right: 25px;
                     }
             
 }

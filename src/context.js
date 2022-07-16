@@ -42,6 +42,10 @@ const AppProvider = ({children}) => {
 
      }
 
+     const payButton = (e) =>{
+        e.preventDefault()
+     }
+
      
      
      const filterItems = (category) => {
@@ -141,7 +145,8 @@ const AppProvider = ({children}) => {
         showCartPage,
         cartPage,
         goToCart,
-        checkout
+        checkout,
+        payButton
          }}>
             {children}
         </AppContext.Provider>
