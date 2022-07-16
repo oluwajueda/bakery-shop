@@ -6,6 +6,7 @@ import './index.css';
 import LandingPage from './LandingPage';
 import LoginPage from './LoginPage';
 import Market from './Market';
+import MyCart from './MyCart';
 import Order from './Order';
 import Profile from './Profile';
 import Registration from './Registration';
@@ -14,6 +15,7 @@ function App() {
  
   return (
    <>
+  
    
     <BrowserRouter>
     <Routes>

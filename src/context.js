@@ -20,58 +20,88 @@ const AppProvider = ({children}) => {
      const [showDetails, setShowDetails] = useState(false)
      const [itemDetails, setItemDetails] = useState({})
      const [number, setNumber] = useState(1)
-    
+     const [cartItems, setCartItems] = useState([])
+     const [cartPage, setCartPage] = useState(false)
+     const [checkout, setCheckOut] = useState(false)
+     
+     
+     const addToCart = (id,image,text,name,price) =>{
+            const cartObj = {id,image,text,name,price}
+            setCartItems([...cartItems, {...cartObj}])
+            console.log(cartItems)
 
+     }
+
+     const goToCart = () =>{
+          setCheckOut(true)  
+          setCartPage(false)
+            setIsProfile(false)
+           setHome(false)
+           setIsInbox(false)
+           setIsOrder(false)
+
+     }
+
+     
+     
      const filterItems = (category) => {
-        const newItems = items.filter((item)=> item.category === category)
-        setMenuItems(newItems)
-     }
-
-     const increase = () =>{
-        setNumber(number+1)
-     }
-      const decrease =()=> {
-        
-        if(number>1){
-           setNumber(number-1)
-        }else{
-            return number
+         const newItems = items.filter((item)=> item.category === category)
+         setMenuItems(newItems)
         }
-     }
-const backDetails = () =>{
-     setShowDetails(false)
-      setHome(true)
-        setIsProfile(false)
-        setIsInbox(false)
-        setIsOrder(false)
-}
-    
-    const showProfile = () =>{
-        setIsProfile(true)
-        setHome(false)
-        setIsInbox(false)
-        setIsOrder(false)
-    }
-    const showHome =() => {
-        setHome(true)
-        setIsProfile(false)
-        setIsInbox(false)
-        setIsOrder(false)
-    }
-
-    const showInbox = () =>{
-          setIsInbox(true)
-          setIsProfile(false)
+        
+        const increase = () =>{
+            setNumber(number+1)
+        }
+        const decrease =()=> {
+            
+            if(number>1){
+                setNumber(number-1)
+            }else{
+                return number
+            }
+        }
+        const backDetails = () =>{
+            setShowDetails(false)
+            setHome(true)
+            setIsProfile(false)
+            setIsInbox(false)
+            setIsOrder(false)
+        }
+        
+        const showProfile = () =>{
+            setIsProfile(true)
+            setHome(false)
+            setIsInbox(false)
+            setIsOrder(false)
+        }
+        const showHome =() => {
+            setHome(true)
+            setIsProfile(false)
+            setIsInbox(false)
+            setIsOrder(false)
+        }
+        
+        const showInbox = () =>{
+            setIsInbox(true)
+            setIsProfile(false)
             setHome(false)
             setIsOrder(false)
-    }
-    const showOrder = () =>{
-         setIsOrder(true)
-          setIsInbox(false)
-          setIsProfile(false)
+        }
+        const showOrder = () =>{
+            setIsOrder(true)
+            setIsInbox(false)
+            setIsProfile(false)
             setHome(false)
+            
+        }
+        const showCartPage = () => {
+           setCartPage(true)
+            setIsProfile(false)
+           setHome(false)
+           setIsInbox(false)
+           setIsOrder(false)
            
-    }
+        }
     const completeDetails = (id,image,text,name,price) =>{
        
          setHome(false)
@@ -105,7 +135,13 @@ const backDetails = () =>{
          increase,
          decrease,
          number,
-         backDetails
+         backDetails,
+         addToCart,
+         cartItems,
+        showCartPage,
+        cartPage,
+        goToCart,
+        checkout
          }}>
             {children}
         </AppContext.Provider>

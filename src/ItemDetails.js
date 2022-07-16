@@ -5,7 +5,7 @@ import {AiOutlineArrowLeft} from 'react-icons/ai'
 
 const ItemDetails = () => {
 
-    const {itemDetails, number,decrease,increase, backDetails} = useGlobalContext()
+    const {itemDetails, number,decrease,increase, backDetails, addToCart} = useGlobalContext()
     const {id,image,text,name,price} = itemDetails
   return<div className='whole-div'>
   <div className='details-first-div'>
@@ -20,7 +20,7 @@ const ItemDetails = () => {
   <main className='details-second-div' >
  
    
-   <div>
+   <div key={id}>
         <img className='image-details' src={image} alt={name}/>
         <h2 className='details-h2'>{name}</h2>
         <div className='star-p'>
@@ -35,7 +35,8 @@ const ItemDetails = () => {
         </div>
         <h3 className='h4-price'>${price}/pcs</h3>
         </div>
-        <button className='addtocart-btn'>Add To Cart</button>
+       
+        <button className='addtocart-btn' onClick={()=>addToCart(id,image,text,name,price)}>Add To Cart</button>
         <p className='detail-text'>{text}</p>
         </div>
         
