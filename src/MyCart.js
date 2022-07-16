@@ -4,12 +4,15 @@ import bread from './photos/bread-header.png'
 import vector from './photos/Vector.png'
 import forward from './photos/forwardreal.png'
 import back from './photos/back.png'
+import CheckoutBtn from './CheckoutBtn'
 
 
 const MyCart = () => {
 
     const {cartItems,number, goToCart} = useGlobalContext()
   return (
+
+    <div>
     <div className='Market'>
        
       <div className='Market-div'>
@@ -25,6 +28,8 @@ const MyCart = () => {
       </div>
        <button className='search-btn'></button>
        </div>
+       
+        </div>
      
        <h4 className='mycart-h4'>My Cart</h4>
 
@@ -38,7 +43,7 @@ const MyCart = () => {
                 <img className='cartpage-image' src={image} alt='name'/>
                 <div>
                  <h3 >{name}</h3>
-                  <p>66 left | <span>4.8/5</span></p>
+                  <p className='checkout-p'>66 left | <span>4.8/5</span></p>
                   </div>
                 <div>
                 </div>
@@ -53,12 +58,14 @@ const MyCart = () => {
                 <img className='vector2' src={forward} alt='name'/>
                 </div>
                </div>
+                
             </div>
           })
         }
 
        </div>
-  <button onClick={goToCart} className='checkout-btn'>Checkout</button>
+  
+   <CheckoutBtn/>
     </div>
   )
 }

@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding:0;
   box-sizing: border-box;
+ 
 }
 *{
   margin: 0;
@@ -396,6 +397,7 @@ body{
          .bottom-bar{
           width: 100%;
           height:50px;
+
           background-color: #9b3434;
           display: flex;
             flex-direction: row;
@@ -404,6 +406,7 @@ body{
             overflow: hidden;
             position: fixed;
             bottom: 0;
+           
 
          }
          .bottom-btn{
@@ -618,6 +621,7 @@ body{
             width: 270px;
            margin: auto;
            margin-top: 15px;
+           padding-bottom: calc(12px + 70px);
          
           }
           .arrow-btn{
@@ -751,6 +755,7 @@ body{
       font-size: 12px;
       line-height: 18px;
       font-weight: 500;
+      margin-bottom: calc(40px + 2rem);
      }
 
          .checkout-input {
@@ -792,6 +797,19 @@ body{
                     .horizonatal-line{
                       width: 100%;
                       margin-top: 60px;
+                    }
+                    .checkout-p{
+                      font-size: 12px;
+                    }
+                    .empty-div{
+                      height: 16px;
+                      margin-bottom: calc(16px + 40px);
+                    }
+                    .empty-div{
+                      height: 16px;
+                      margin-bottom: calc(16px + 40px);
+                      background-color: #fff;
+                   color: #fff;
                     }
             
 }

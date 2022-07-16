@@ -31,6 +31,7 @@ const MarketHome = () => {
       <Menu/>
     
     </div>
+    <div className='empty-div'></div>
     </div>
   )
 }

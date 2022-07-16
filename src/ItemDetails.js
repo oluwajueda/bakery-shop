@@ -42,7 +42,7 @@ const ItemDetails = () => {
         
       
       </main>
-    
+  
   </div> 
 }
 
