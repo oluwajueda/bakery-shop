@@ -4,6 +4,7 @@ import { useGlobalContext } from './context'
 import Inbox from './Inbox'
 import ItemDetails from './ItemDetails'
 import MarketHome from './MarketHome'
+import Modal from './Modal'
 import MyCart from './MyCart'
 import Order from './Order'
 import Profile from './Profile'
@@ -11,7 +12,7 @@ import Profile from './Profile'
 
 const CompletePage = () => {
 
-    const {home,isInbox,isProfile,isOrder,showDetails, cartPage, checkout} = useGlobalContext()
+    const {home,isInbox,isProfile,isOrder,showDetails, cartPage, checkout, modal} = useGlobalContext()
  
     if(home){
         return<MarketHome/>
@@ -33,6 +34,9 @@ const CompletePage = () => {
   }
   if(checkout){
     return <Checkout/>
+  }
+  if(modal){
+    return <Modal/>
   }
 }
 

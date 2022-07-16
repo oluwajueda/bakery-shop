@@ -17,7 +17,7 @@ const MarketHome = () => {
          <div>
             <img onClick={showCartPage} className='cart-image' src={cart} alt='cart'/>
         </div>
-  <h1>Fresh Baked Everyday</h1>
+  <h1>Fresh Baked<br/> Everyday</h1>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
@@ -26,11 +26,12 @@ const MarketHome = () => {
       </div>
        <button className='search-btn'></button>
        </div>
+       </div>
       
      <Categories/>
       <Menu/>
     
-    </div>
+    
     <div className='empty-div'></div>
     </div>
   )

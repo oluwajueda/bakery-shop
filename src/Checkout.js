@@ -3,7 +3,7 @@ import { useGlobalContext } from './context'
 import back from './photos/back.png'
 const Checkout = () => {
 
-     const {payButton} = useGlobalContext()
+     const {payButton, total} = useGlobalContext()
 
   return (
 
@@ -13,12 +13,12 @@ const Checkout = () => {
    <img src={back} className='back-image' alt=''/>
    </div>
       
-       <button className='btn-checkout'>Details</button>
+       <button className='btn-checkout'>Checkout</button>
 
          <div className='form-area'>
         <form >
              <div className='label-input'>
-             <label  className='form-label'>Promo Code</label>
+             <label  className='form-label'>Courier</label>
             <div >
      <select className='checkout-input-select' >
         <option>Go Send Sameday</option>
@@ -28,7 +28,7 @@ const Checkout = () => {
     </div>
     </div>
       <div className='label-input'>
-    <label  className='form-label'>Promo Code</label>
+    <label  className='form-label'>Payment Method</label>
     <div >
      <select className='checkout-input-select'>
         <option>GoPay</option>
@@ -38,7 +38,7 @@ const Checkout = () => {
     </div>
     </div>
      <div className='label-input'>
-     <label  className='form-label'>Phone Number</label>
+     <label  className='form-label'>Telephone Number</label>
             <input type='tel' className='checkout-input' id='phone' placeholder='081-4000-4000'  />
             
             </div>
@@ -49,6 +49,12 @@ const Checkout = () => {
             </div>
 
             <hr className='horizonatal-line'/>
+
+            <div className='class-total'>
+              <h4 className='total'>Total</h4>
+
+              <h4 className='total'>${total}</h4>
+            </div>
    
     
             <button onClick={payButton} className='checkout-btn'>Checkout</button>

@@ -23,14 +23,38 @@ const AppProvider = ({children}) => {
      const [cartItems, setCartItems] = useState([])
      const [cartPage, setCartPage] = useState(false)
      const [checkout, setCheckOut] = useState(false)
+     const [total, setTotal] = useState(0)
+     const [modal, setModal] = useState(false)
      
      
-     const addToCart = (id,image,text,name,price) =>{
-            const cartObj = {id,image,text,name,price}
+     const addToCart = (id,image,text,name,price,number) =>{
+            const cartObj = {id,image,text,name,price,number}
             setCartItems([...cartItems, {...cartObj}])
-            console.log(cartItems)
+            console.log(cartObj)
 
      }
+
+     useEffect (() =>{
+        let {total, number} = cartItems.reduce(
+            (cartTotal, cartItem) => {
+                const {price, number} = cartItem;
+                const itemPrice = number * price;
+                cartTotal.total += itemPrice;
+                cartTotal.number += number;
+                console.log(cartTotal)
+                console.log(itemPrice)
+                console.log(price)
+                console.log(number)
+                console.log(itemPrice)
+
+                return cartTotal;
+
+            },
+            {total:0, number:0}
+        )
+          setTotal(total);
+          setNumber(number)
+     }, [cartItems])
 
      const goToCart = () =>{
           setCheckOut(true)  
@@ -44,6 +68,14 @@ const AppProvider = ({children}) => {
 
      const payButton = (e) =>{
         e.preventDefault()
+        setModal(true)
+         setCartPage(false)
+            setIsProfile(false)
+           setHome(false)
+           setIsInbox(false)
+           setIsOrder(false)
+           setCheckOut(false)
+           console.log('hello')
      }
 
      
@@ -146,7 +178,9 @@ const AppProvider = ({children}) => {
         cartPage,
         goToCart,
         checkout,
-        payButton
+        payButton,
+        total,
+        modal
          }}>
             {children}
         </AppContext.Provider>

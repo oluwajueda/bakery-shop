@@ -36,7 +36,7 @@ const ItemDetails = () => {
         <h3 className='h4-price'>${price}/pcs</h3>
         </div>
        
-        <button className='addtocart-btn' onClick={()=>addToCart(id,image,text,name,price)}>Add To Cart</button>
+        <button className='addtocart-btn' onClick={()=>addToCart(id,image,text,name,price,number)}>Add To Cart</button>
         <p className='detail-text'>{text}</p>
         </div>
         

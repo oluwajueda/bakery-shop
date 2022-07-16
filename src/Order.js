@@ -15,7 +15,7 @@ const Order = () => {
          <div>
             <img className='cart-image' src={cart} alt='cart'/>
         </div>
-  <h1 className='fresh-baked'> <br/>Fresh Baked Everyday</h1>
+  <h1 className='fresh-baked'> <br/>Fresh Baked<br/> Everyday</h1>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
