@@ -383,6 +383,10 @@
         margin-top: 30px;
     }
 
+    .product-details{
+        display: none;
+    }
+
     .food-name {
         font-size: 8px;
         line-height: 12px;
@@ -443,6 +447,9 @@
 
     .category-div {
         text-align: center;
+    }
+    .category h1{
+        display: none;
     }
 
     .bottom-bar {
@@ -591,6 +598,8 @@
         padding-right: 9px;
     }
 
+   
+
     .image-details {
         display: block;
         width: 249px;
@@ -615,6 +624,7 @@
         display: block;
 
     }
+   
 
     .details-btn-div {
         padding-top: 12px;

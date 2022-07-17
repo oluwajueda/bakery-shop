@@ -21,6 +21,7 @@ const Menu = () => {
             </div>
             <div>
             <h4 className='product-details'>see details...</h4>
+            <img className='details-addto' src={addto} alt='name'/>
             </div>
             </div>
             </div>
