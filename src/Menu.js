@@ -6,19 +6,21 @@ const Menu = () => {
 
     const {menuItems, completeDetails} = useGlobalContext()
   return <div className='products'>
+
+    
       {
         menuItems.map((menuItem)=>{
           const {id, name, image, price, text} = menuItem;
-          return <article onClick={(e)=>completeDetails(id,image,text,name,price)} className='section-center' key={id}>
+          return <article onClick={(e)=>completeDetails(id,image,text,name,price)}  key={id}>
            <div className='single-product'>
             <img src={image} alt={name} className='photo'/>
             <div className='food-background'>
-              <div>
+              <div  className='name-price'>
             <h3 className='food-name'>{name}</h3>
             <h4 className='food-price'>{price}</h4>
             </div>
             <div>
-              <img src={addto} alt='name' className='addto-btn'/>
+            <h4 className='product-details'>see details...</h4>
             </div>
             </div>
             </div>

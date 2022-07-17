@@ -8,7 +8,7 @@ const Checkout = () => {
   return (
 
    
-    <div>
+    <div className='checkoutpage' >
         <div className='arrow-btn-div'>
    <img src={back} className='back-image' alt=''/>
    </div>

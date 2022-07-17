@@ -10,6 +10,7 @@ import MyCart from './MyCart';
 import Order from './Order';
 import Profile from './Profile';
 import Registration from './Registration';
+import './mobile.css'
 
 function App() {
  

@@ -15,10 +15,11 @@ const MarketHome = () => {
       <div className='Market'>
        
       <div className='Market-div'>
-         <div>
+         <div className='h1-and-cart'>
             <img onClick={showCartPage} className='cart-image' src={cart} alt='cart'/>
-        </div>
-  <h1>Fresh Baked<br/> Everyday</h1>
+        
+  <h1 className='mobile-h1'>Fresh Baked <span className='h1-span' >Everyday</span> </h1>
+  </div>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
@@ -30,7 +31,10 @@ const MarketHome = () => {
        </div>
       
      <Categories/>
+
+     <div className='menu-div'>
       <Menu/>
+      </div>
     
     
     <div className='empty-div'></div>

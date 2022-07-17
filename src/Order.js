@@ -6,17 +6,19 @@ import Bottombar from './Bottombar'
 import search from './photos/search.png'
 
 const Order = () => {
-    const{isOrder} = useGlobalContext()
+    const{isOrder,showCartPage} = useGlobalContext()
 
     if(isOrder){
   return (
+   
      <div className='Market'>
        
       <div className='Market-div'>
-         <div>
-            <img className='cart-image' src={cart} alt='cart'/>
-        </div>
-  <h1 className='fresh-baked'> <br/>Fresh Baked<br/> Everyday</h1>
+         <div className='h1-and-cart'>
+            <img onClick={showCartPage} className='cart-image' src={cart} alt='cart'/>
+        
+  <h1 className='mobile-h1'>Fresh Baked <span className='h1-span' >Everyday</span> </h1>
+  </div>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
@@ -25,7 +27,11 @@ const Order = () => {
       </div>
        <button className='search-btn'><img src={search} alt='search'/></button>
        </div>
-       <h4 className='order-h4'>My Order</h4>
+       <div className='just-margin'>
+
+          <h4 className='order-h4'>My Order</h4>
+       </div>
+      
       
   
     </div>

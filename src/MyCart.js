@@ -12,14 +12,14 @@ const MyCart = () => {
     const {cartItems,number, goToCart} = useGlobalContext()
   return (
 
-    <div>
+    <div className='cartpage'>
     <div className='Market'>
        
       <div className='Market-div'>
-         <div>
+         <div className='h1-and-cart'>
             <img className='cart-image' src={vector} alt='cart'/>
+  <h1 className='mobile-h1'>Fresh Baked <span className='h1-span' >Everyday</span> </h1>
         </div>
-  <h1>Fresh Baked <br/> Everyday</h1>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
@@ -30,10 +30,16 @@ const MyCart = () => {
        </div>
        
         </div>
-     
-       <h4 className='mycart-h4'>My Cart</h4>
+        <div className='just-margin'>
+     <div className='mycart-div'>
+      </div>
 
+       <h4 className='mycart-h4'>My Cart</h4>
+      
+</div>
+ 
        <div className='cart-section'>
+       
         {
           cartItems.map((cartItem)=>{
             const {name,image,price,id} = cartItem
@@ -64,8 +70,9 @@ const MyCart = () => {
         }
 
        </div>
-  
+  <div className='checkoutbtn-div' >
    <CheckoutBtn/>
+   </div>
     </div>
   )
 }

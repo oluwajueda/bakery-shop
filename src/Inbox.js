@@ -7,17 +7,18 @@ import search from './photos/search.png'
 
 const Inbox = () => {
     
-    const {isInbox}= useGlobalContext()
+    const {isInbox,showCartPage}= useGlobalContext()
 
     if(isInbox){
   return (
    <div className='Market'>
        
       <div className='Market-div'>
-         <div>
-            <img className='cart-image' src={cart} alt='cart'/>
-        </div>
-  <h1>Fresh Baked <br/> Everyday</h1>
+        <div className='h1-and-cart'>
+            <img onClick={showCartPage} className='cart-image' src={cart} alt='cart'/>
+        
+  <h1 className='mobile-h1'>Fresh Baked <span className='h1-span' >Everyday</span> </h1>
+  </div>
   <img className='bread-image' src={bread} alt='bread'/>
       </div>
       <div className='input-to-btn'>
@@ -26,7 +27,12 @@ const Inbox = () => {
       </div>
        <button className='search-btn'><img src={search} alt='search'/></button>
        </div>
-       <h4 className='inbox-h4'>My Inbox</h4>
+
+       <div className='just-margin'>
+
+          <h4 className='inbox-h4'>My Inbox</h4>
+       </div>
+      
       
   
     </div>
