@@ -440,14 +440,15 @@
 
 
     }
+    .category-div{
+        text-align: center;
+    }
 
     .category-btn:hover {
         background-color: #fffb90;
     }
 
-    .category-div {
-        text-align: center;
-    }
+    
     .category h1{
         display: none;
     }
