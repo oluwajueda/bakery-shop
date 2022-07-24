@@ -9,7 +9,7 @@ import CheckoutBtn from './CheckoutBtn'
 
 const MyCart = () => {
 
-    const {cartItems,number, goToCart} = useGlobalContext()
+    const {cartItems,number, goToCart, amount} = useGlobalContext()
   return (
 
     <div className='cartpage'>

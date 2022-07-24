@@ -5,7 +5,7 @@ const data = [
         name: 'Cinamon Macaron',
         category: 'Macaron',
         text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'4'
     },
     {   
          id: 2,
@@ -13,7 +13,7 @@ const data = [
         name: 'Colorful Macaron',
         category:'Macaron',
          text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'3.5'
     },
     {    
          id: 3,
@@ -21,7 +21,7 @@ const data = [
         name: 'Lavender Macaron',
          category:'Macaron',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'4'
     },
     {    
          id: 4,
@@ -29,7 +29,7 @@ const data = [
         name: 'Strawberry Macaron',
          category:'Macaron',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'4.5'
     },
     {   
          id: 5,
@@ -37,7 +37,7 @@ const data = [
         name: 'Coke Macaron',
          category:'Macaron',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'6'
     },
     {    
          id: 6,
@@ -45,46 +45,46 @@ const data = [
         name: 'Packed Macaron',
          category:'Macaron',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'15'
     },
     {    
          id: 7,
-        image: 'images/fifth-image.jpg',
+        image: 'images/wheat-bread.jpg',
         name: 'Wheat Bread',
          category:'Bread',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'3.5'
     },
     {   
          id: 8,
-        image: 'images/fifth-image.jpg',
+        image: 'images/birthday-cake.jpg',
         name: 'Birthday Cake',
-         category:'Cake',
+         category:'cake',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'38'
     },
     {   
          id: 9,
-        image: 'images/fifth-image.jpg',
+        image: 'images/coffee-cake.jpg',
         name: 'Coffee Bread',
          category:'Bread',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'3.8'
     },
     {    id: 10,
-        image: 'images/fifth-image.jpg',
+        image: 'images/cinnamon-roll.jpg',
         name: 'Cinnamon Roll',
          category:'Roll',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'4'
     },
     {    
          id: 11,
-        image: 'images/fifth-image.jpg',
+        image: 'images/cup-cake.jpg',
         name: 'Cupcake Limited',
-         category:'Cake',
+         category:'cake',
           text:'Cinnamon macarons are Sano Bakery-style macarons that use selected cinnamon as an additional ingredient in making macarons. Using quality ingredients to guarantee the taste and quality of each of our products. Enjoy warm cinnamon macarons right away',
-        price:'20'
+        price:'2.5'
     }
 ]
 

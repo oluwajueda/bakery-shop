@@ -3,7 +3,7 @@ import { useGlobalContext } from './context'
 import back from './photos/back.png'
 const Checkout = () => {
 
-     const {payButton, total} = useGlobalContext()
+     const {payButton, total,amount} = useGlobalContext()
 
   return (
 
@@ -54,6 +54,12 @@ const Checkout = () => {
               <h4 className='total'>Total</h4>
 
               <h4 className='total'>${total}</h4>
+            </div>
+
+            <div className='class-total'>
+              <h4 className='total'>quantity</h4>
+
+              <h4 className='total'>{amount}</h4>
             </div>
    
     

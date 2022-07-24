@@ -61,6 +61,7 @@
         font-style: normal;
         color: #fff;
         border: transparent;
+        cursor: pointer;
     }
 
     .signup-btn {
@@ -81,6 +82,7 @@
         margin-top: 12px;
         display: block;
         border: transparent;
+        cursor: pointer;
 
     }
 
@@ -182,6 +184,7 @@
         text-align: center;
         color: #fff;
         margin-top: 27px;
+        cursor: pointer;
     }
 
     .forgot-password {
@@ -236,6 +239,7 @@
         font-style: normal;
         font-weight: 400;
         border: transparent;
+        cursor: pointer;
     }
 
     .last-p {
@@ -282,6 +286,7 @@
         color: #fff;
         margin-top: 40px;
         margin-bottom: 20px;
+        cursor: pointer;
     }
 
     .registration-last-p {
@@ -302,8 +307,24 @@
         height: 30px;
         margin-top: 18px;
         margin-left: 84%;
-
+        cursor: pointer;
     }
+.cartimage-amount {
+    position: relative;
+}
+
+.cart-total-amount {
+    position: absolute;
+    right: 4.5%;
+    top: 4.5%;
+    background-color: #9b3434;
+    color: #fff;
+    border-radius: 100%;
+    width: 15px;
+    text-align: center;
+    padding: 0.5px 2px;
+}
+
     .btn-name{
         display: none;
     }
@@ -358,6 +379,7 @@
         background-color: #9b3434;
         margin-left: 14px;
         border: transparent;
+        cursor: pointer;
 
 
     }
@@ -365,6 +387,7 @@
     .input-to-btn {
         display: flex;
         margin-top: -15px;
+        cursor: pointer;
     }
 
     .photo {
@@ -436,6 +459,7 @@
         border-color: #9b3434;
         background-color: #fff;
         border-radius: 7px;
+        cursor: pointer;
 
 
 
@@ -482,6 +506,7 @@
         margin-right: auto;
         font-size: 27px;
         width: 30px;
+        cursor: pointer;
     }
 
     .edit {
@@ -597,6 +622,7 @@
         width: 20px;
         height: 20px;
         padding-right: 9px;
+        cursor: pointer;
     }
 
    
@@ -623,6 +649,7 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
+        cursor: pointer;
 
     }
    
@@ -680,6 +707,7 @@
         padding-left: 5px;
         padding-right: 5px;
         font-size: 24px;
+        cursor: pointer;
     }
 
     .number-p {
@@ -704,6 +732,7 @@
         font-weight: 600px;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
     }
 
     .detail-text {
@@ -726,6 +755,7 @@
         margin-left: auto;
         display: block;
         margin-right: 25px;
+        cursor: pointer;
     }
 
     .checkout-arrow-btn {
@@ -736,6 +766,7 @@
         margin-left: auto;
         display: block;
         margin-right: 25px;
+        cursor: pointer;
     }
 
     .arrow-btn-div {
@@ -874,6 +905,7 @@
         line-height: 18px;
         font-weight: 500;
         margin-bottom: calc(40px + 2rem);
+        cursor: pointer;
     }
 
     .checkout-input {
@@ -909,6 +941,7 @@
         color: #9b3434;
         display: block;
         box-shadow: 1px 1px 3px #9B3434;
+        cursor: pointer;
 
 
     }
@@ -928,6 +961,7 @@
         color: #9b3434;
         display: block;
         box-shadow: 1px 1px 3px #9B3434;
+        cursor: pointer;
 
 
     }

@@ -9,15 +9,17 @@ import search from './photos/search.png'
 
 const MarketHome = () => {
 
-  const {showCartPage} = useGlobalContext()
+  const {showCartPage, amount} = useGlobalContext()
   return (
     <div>
       <div className='Market'>
        
       <div className='Market-div'>
          <div className='h1-and-cart'>
+          <div className='cartimage-amount'>
             <img onClick={showCartPage} className='cart-image' src={cart} alt='cart'/>
-        
+        <p className='cart-total-amount'>{amount}</p>
+        </div>
   <h1 className='mobile-h1'>Fresh Baked <span className='h1-span' >Everyday</span> </h1>
   </div>
   <img className='bread-image' src={bread} alt='bread'/>

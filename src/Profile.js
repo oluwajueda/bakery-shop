@@ -13,18 +13,19 @@ const Profile = () => {
         <div className='edit'>
         <img src={edit} alt={edit} className='edit'/>
         </div>
-        <p className='location'>columbus, Ohio</p>
+        {/* <p className='location'>columbus, Ohio</p> */}
         <div className='name-date'>
         <h2 className='my-name'>Olamide Osuolale</h2>
         <p className='date'>13 September 2022</p>
          </div>
       </div>
+      <div className='profile-image-div'>
    <img className='profile-image' src={profile} alt={profile}/>
-
+</div>
 
    <h4 className='profile-h4'>Account</h4>
 
-<div>
+<div className='profile-input-area'>
     <div className='input'>
      <select className='form-select'>
         <option>24/7 Customer Support</option>

@@ -25,40 +25,48 @@ const AppProvider = ({children}) => {
      const [checkout, setCheckOut] = useState(false)
      const [total, setTotal] = useState(0)
      const [modal, setModal] = useState(false)
+     const [amount, setAmount] = useState(0)
      
      
      const addToCart = (id,image,text,name,price,number) =>{
             const cartObj = {id,image,text,name,price,number}
-            setCartItems([...cartItems, {...cartObj}])
-            console.log(cartObj)
-
+           
+  setCartItems([...cartItems, cartObj])
+          
+            // console.log(cartObj)
+            console.log(cartItems)
+        
+          
+            
+    
      }
 
      useEffect (() =>{
-        let {total, number} = cartItems.reduce(
+        let {total, num} = cartItems.reduce(
             (cartTotal, cartItem) => {
                 const {price, number} = cartItem;
                 const itemPrice = number * price;
                 cartTotal.total += itemPrice;
-                cartTotal.number += number;
-                console.log(cartTotal)
-                console.log(itemPrice)
-                console.log(price)
+                cartTotal.num += number;
+                // console.log(cartTotal)
+                // console.log(itemPrice)
+                // console.log(price)
                 console.log(number)
-                console.log(itemPrice)
+                // console.log(itemPrice)
 
                 return cartTotal;
 
             },
-            {total:0, number:0}
+            {total:0, num:0}
         )
           setTotal(total);
-          setNumber(number)
+          setAmount(num)
      }, [cartItems])
 
      const goToCart = () =>{
           setCheckOut(true)  
           setCartPage(false)
+          setShowDetails(false)
             setIsProfile(false)
            setHome(false)
            setIsInbox(false)
@@ -75,6 +83,7 @@ const AppProvider = ({children}) => {
            setIsInbox(false)
            setIsOrder(false)
            setCheckOut(false)
+           setShowDetails(false)
            console.log('hello')
      }
 
@@ -97,11 +106,12 @@ const AppProvider = ({children}) => {
             }
         }
         const backDetails = () =>{
-            setShowDetails(false)
             setHome(true)
             setIsProfile(false)
             setIsInbox(false)
             setIsOrder(false)
+             setShowDetails(false)
+             setCartPage(false)
         }
         
         const showProfile = () =>{
@@ -109,12 +119,17 @@ const AppProvider = ({children}) => {
             setHome(false)
             setIsInbox(false)
             setIsOrder(false)
+            setShowDetails(false)
+            setCartPage(false)
         }
         const showHome =() => {
             setHome(true)
             setIsProfile(false)
             setIsInbox(false)
             setIsOrder(false)
+            setShowDetails(false)
+            
+           
         }
         
         const showInbox = () =>{
@@ -122,28 +137,35 @@ const AppProvider = ({children}) => {
             setIsProfile(false)
             setHome(false)
             setIsOrder(false)
+            setCartPage(false)
+            setShowDetails(false)
         }
         const showOrder = () =>{
             setIsOrder(true)
             setIsInbox(false)
             setIsProfile(false)
             setHome(false)
+            setShowDetails(false)
+            setCartPage(false)
             
         }
         const showCartPage = () => {
            setCartPage(true)
+        
             setIsProfile(false)
            setHome(false)
            setIsInbox(false)
            setIsOrder(false)
+           setShowDetails(false)
+          
            
         }
     const completeDetails = (id,image,text,name,price) =>{
-       
-         setHome(false)
-         setShowDetails(true)
-         const newObj = {id,image,text,name,price} 
+       const newObj = {id,image,text,name,price} 
          setItemDetails( newObj)
+           setShowDetails(true)
+          setHome(false)
+        setCartPage(false)
     }
 
     return (
@@ -180,7 +202,8 @@ const AppProvider = ({children}) => {
         checkout,
         payButton,
         total,
-        modal
+        modal,
+        amount
          }}>
             {children}
         </AppContext.Provider>

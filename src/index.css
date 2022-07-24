@@ -82,6 +82,7 @@ font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     color: #fff;
     border: transparent;
+    cursor: pointer;
   }
 
   .signup-btn {
@@ -102,6 +103,7 @@ font-family: 'Ubuntu', sans-serif;
     margin-top: 12px;
     display: block;
     border: transparent;
+    cursor: pointer;
 
   }
 
@@ -112,17 +114,20 @@ font-family: 'Ubuntu', sans-serif;
 
   .loginpage h1 {
     color: #cf8900;
-    margin-top: 27px;
+    padding-top: 22px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
+ 
+
   .loginpage h3 {
     color: #000;
     font-size: 20px;
-    margin-left: 53px;
-    margin-top: 25px;
+   text-align: center;
+    padding-top: 25px;
+    margin-bottom: 25px;
   }
 
   /* form{
@@ -132,11 +137,12 @@ font-family: 'Ubuntu', sans-serif;
   .first-p {
     color: #505050;
     font-size: 10px;
-    margin-left: 52px;
+    margin-left: 39%;
+    padding-top: 15px;
   }
 
   .form-area {
-    margin-top: 25px;
+    margin-top: 16px;
     margin-bottom: 1rem;
     /* margin-left: 50px; */
     display: flex;
@@ -189,6 +195,9 @@ font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
     line-height: 20px;
   }
+  .loginpage{
+    background-color: #f2f4f8;
+  }
 
   .loginpage-btn {
     height: 38px;
@@ -203,6 +212,7 @@ font-family: 'Ubuntu', sans-serif;
     text-align: center;
     color: #fff;
     margin-top: 27px;
+    cursor: pointer;
   }
 
   .forgot-password {
@@ -257,6 +267,10 @@ font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: 400;
     border: transparent;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   cursor: pointer;
   }
 
   .last-p {
@@ -303,6 +317,7 @@ font-family: 'Ubuntu', sans-serif;
     color: #fff;
     margin-top: 40px;
     margin-bottom: 20px;
+    cursor: pointer;
   }
 
   .registration-last-p {
@@ -320,6 +335,7 @@ font-family: 'Ubuntu', sans-serif;
       position: fixed;
       right: 0;
       top: 0;
+      
      
   }
   
@@ -331,6 +347,7 @@ font-family: 'Ubuntu', sans-serif;
   .checkoutbtn-div{
     width: 80%;
     margin-left: auto;
+   
   }
 
   /* .cart-image {
@@ -348,8 +365,26 @@ font-family: 'Ubuntu', sans-serif;
     height: 30px;
     margin-right: 29px;
     margin-top: 29px;
+    cursor: pointer;
    
   }
+  .cartimage-amount{
+    position: relative;
+  }
+
+  .cart-total-amount{
+  position: absolute;
+    right: 32%;
+    top: 23%;
+    background-color: #9b3434;
+    color: #fff;
+    border-radius: 100%;
+    width: 15px;
+    text-align: center;
+    padding: 1px 3px;
+  }
+
+
     .h1-and-cart{
         display: flex;
         flex-direction: row-reverse;
@@ -415,6 +450,7 @@ font-family: 'Ubuntu', sans-serif;
     background-color: #352e2e;
     margin-left: 14px;
     border: transparent;
+    cursor: pointer;
 
 
   }
@@ -422,6 +458,7 @@ font-family: 'Ubuntu', sans-serif;
   .input-to-btn {
     display: flex;
     margin-top: -15px;
+    cursor: pointer;
   }
 
   .photo {
@@ -515,6 +552,7 @@ font-family: 'Ubuntu', sans-serif;
     border-color: #9b3434;
     background-color: #fff;
     border-radius: 7px;
+    cursor: pointer;
 
 
 
@@ -522,6 +560,7 @@ font-family: 'Ubuntu', sans-serif;
 
   .category-btn:hover {
     background-color: #fffb90;
+    cursor: pointer;
   }
 
 .category{
@@ -543,6 +582,7 @@ font-family: 'Ubuntu', sans-serif;
     color: #959595;
     margin-top: 5px;
     padding-right: 4px;
+    cursor: pointer;
   }
 
   .bottom-bar {
@@ -568,6 +608,7 @@ background-color: #9b3434;
     position: fixed;
     top: 0;
    
+   
 
   }
   .bar-span{
@@ -584,6 +625,7 @@ background-color: #9b3434;
     margin-right: auto;
     font-size: 27px;
     width: 30px;
+    cursor: pointer;
   }
   
   .desktop-bottom-btn {
@@ -596,6 +638,7 @@ background-color: #9b3434;
     margin-right: auto;
     font-size: 27px;
     width: 30px;
+    cursor: pointer;
 
   }
   .btn-name{
@@ -654,6 +697,8 @@ background-color: #9b3434;
     line-height: 20px;
     line-height: 100%;
     align-items: left;
+    padding-top: 10px;
+  
   }
 
   .name-date {
@@ -666,16 +711,24 @@ background-color: #9b3434;
     height: 100px;
     margin-left: auto;
     margin-right: 24px;
-    margin-top: -50px;
+  margin-top: 100px;
     border-radius: 100%;
   }
 
+    .profile-image-div{
+
+    }
+
   .profile-h4 {
-    font-size: 13px;
-    margin-left: 38px;
-    margin-top: 20px;
+  font-size: 18px;
+    margin-left:calc(25px + 20%);
     margin-bottom: 33px;
     color: #9b3434;
+  
+  }
+  .profile-input-area{
+   width: 80%;
+   margin-left: auto;
   }
 
   .form-select {
@@ -701,6 +754,8 @@ background-color: #9b3434;
     margin-top: 30px;
     text-align: center;
     padding-bottom: 16px;
+    width: 80%;
+    margin-left: auto;
   }
 
   span {
@@ -742,6 +797,7 @@ background-color: #9b3434;
     width: 30px;
     height: 25px;
     padding-right: 9px;
+    cursor: pointer;
     
   }
 
@@ -768,6 +824,7 @@ background-color: #9b3434;
     display: block;
     margin-top: calc(38px + 40px);
     display: none;
+    cursor: pointer;
 
   }
 
@@ -830,6 +887,7 @@ background-color: #9b3434;
     padding-left: 5px;
     padding-right: 5px;
     font-size: 24px;
+    cursor: pointer;
   }
 
   .number-p {
@@ -854,6 +912,7 @@ background-color: #9b3434;
     font-weight: 600px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
   }
 
   .detail-text {
@@ -877,6 +936,7 @@ background-color: #9b3434;
     margin-left: auto;
     display: block;
     margin-right: 25px;
+    cursor: pointer;
   }
 
   .checkout-arrow-btn {
@@ -887,6 +947,7 @@ background-color: #9b3434;
     margin-left: auto;
     display: block;
     margin-right: 25px;
+    cursor: pointer;
   }
 
   .arrow-btn-div {
@@ -1035,6 +1096,7 @@ background-color: #9b3434;
     line-height: 18px;
     font-weight: 500;
     margin-bottom: calc(40px + 2rem);
+    cursor: pointer;
   }
 
   .checkout-input {
@@ -1070,6 +1132,7 @@ background-color: #9b3434;
     color: #9b3434;
     display: block;
     box-shadow: 1px 1px 3px #9B3434;
+    cursor: pointer;
 
 
   }
@@ -1089,6 +1152,7 @@ background-color: #9b3434;
     color: #9b3434;
     display: block;
     box-shadow: 1px 1px 3px #9B3434;
+    cursor: pointer;
 
 
   }
