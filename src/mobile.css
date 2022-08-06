@@ -260,9 +260,13 @@
         color: #494949;
     }
         .registrationpage h1 {
-            text-align: center;
             padding-top: 20px;
             margin-bottom: 42px;
+            color: #cf8900;
+              
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
         }
 
     .at-least {
