@@ -186,7 +186,10 @@
         margin-top: 27px;
         cursor: pointer;
     }
-
+.registrationpage {
+    background-color: #f2f4f8;
+    height: 100vh;
+}
     .forgot-password {
         text-align: center;
         height: 17px;
@@ -240,6 +243,10 @@
         font-weight: 400;
         border: transparent;
         cursor: pointer;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .last-p {
@@ -252,6 +259,11 @@
         line-height: 20px;
         color: #494949;
     }
+        .registrationpage h1 {
+            text-align: center;
+            padding-top: 20px;
+            margin-bottom: 42px;
+        }
 
     .at-least {
         font-size: 6px;
@@ -270,6 +282,7 @@
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
+        width: 250px;
     }
 
     .registration-btn {
@@ -287,6 +300,9 @@
         margin-top: 40px;
         margin-bottom: 20px;
         cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .registration-last-p {
@@ -344,6 +360,17 @@
                 color: #9B3434;
                 margin-left: -3.5px;
         }
+
+                .email-error {
+                    color: red;
+                    font-size: 8px;
+                }
+                                 .password-error {
+                                     width: 250px;
+                                     padding-bottom: 15px;
+                                     font-size: 8px;
+                                     color: red;
+                                 }
 
     .desktop-h1{
         display: none;

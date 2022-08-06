@@ -23,6 +23,8 @@ function App() {
       <Route path='/' element={<LandingPage/>}/>
      <Route path='login' element={<LoginPage/>}/>
      <Route path='dashboard' element={<Market />}/>
+     <Route path='register' element={<Registration />}/>
+     
      
     </Routes>
     </BrowserRouter>
