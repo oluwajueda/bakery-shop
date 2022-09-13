@@ -90,7 +90,7 @@ const {setUser} = useGlobalContext()
   return (
   
       <div className='registrationpage'>
-      <h1>Sano Bakery</h1>
+      <h1 className='register-sano'>Sano Bakery</h1>
     
       
       <div className='form-area'>
@@ -126,7 +126,7 @@ const {setUser} = useGlobalContext()
          </div>
           <div className='registration-last-p'>
         <p >Already a member? </p>
-        <p onClick={Login}> Login </p>
+        <p onClick={Login} className='log-btn'> Login </p>
         </div>
          </div>
    

@@ -6,7 +6,13 @@
         background-position: center;
         background-size: cover;
     }
+.signup-button:hover {
+    background-color: #9B3434;
+}
 
+.register-sano {
+    color: #9B3434;
+}
     .landing-background h2 {
         font-family: 'Kaushan Script', cursive;
         width: 226px;
@@ -22,6 +28,13 @@
         letter-spacing: 0.23;
         color: #cf8900;
     }
+
+        .log-btn {
+            cursor: pointer;
+        }
+        .log-btn:hover{
+            color: #9B3434;
+        }
 
     .desktop-cart-image{
         display: none;

@@ -5,6 +5,12 @@ const LandingPage = () => {
 
   const navigate = useNavigate()
 
+  const register = (e) =>{
+    e.preventDefault();
+    navigate('/register')
+  }
+
+
     const handleLogin = () =>{
         navigate('login')
     }
@@ -15,7 +21,7 @@ const LandingPage = () => {
       <p>Good bread makes good day</p>
       <div className='login-btn-div'>
       <button className='login-btn' onClick={handleLogin}>Login</button>
-      <button className='signup-btn'>Sign Up</button>
+      <button className='signup-btn signup-button' onClick={register}>Sign Up</button>
       </div>
     </div>
   

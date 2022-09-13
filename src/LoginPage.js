@@ -63,7 +63,6 @@ return (
     <div className='loginpage'>
       <h1>Sano Bakery</h1>
       <h3 className='login-h3'>Welcome Back!</h3>
-      <p className='first-p'>Login to continue</p>
       <div className='form-area'>
         <form onSubmit={formik.handleSubmit} >
             <div className='column-center'>

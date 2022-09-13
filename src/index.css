@@ -208,13 +208,33 @@ font-family: 'Ubuntu', sans-serif;
   }
   .loginpage{
     background-color: #f2f4f8;
-    height: 100vh;
+   
+  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        margin: 0 auto;
+        padding: 5rem 6rem;
+      
   }
 
 .registrationpage{
+  /* background-color: #f2f4f8;
+    height: 100vh; */
   background-color: #f2f4f8;
-    height: 100vh;
-}
+  
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 5rem 6rem;
+
+  }
 
   .loginpage-btn {
     height: 38px;
@@ -885,6 +905,20 @@ background-color: #9b3434;
   .point {
     margin-top: 3px;
   }
+
+.signup-button:hover{
+   background-color: #9B3434;
+}
+.register-sano{
+ color: #9B3434;
+}
+.log-btn{
+  cursor: pointer;
+}
+.log-btn:hover {
+  color: #9B3434;
+}
+
 
   .number {
     display: flex;
