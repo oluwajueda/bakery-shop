@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'normalize.css';
 import Bottombar from './Bottombar';
 import Inbox from './Inbox';
 import './index.css';
@@ -10,6 +11,7 @@ import MyCart from './MyCart';
 import Order from './Order';
 import Profile from './Profile';
 import Registration from './Registration';
+
 import './mobile.css'
 
 function App() {
